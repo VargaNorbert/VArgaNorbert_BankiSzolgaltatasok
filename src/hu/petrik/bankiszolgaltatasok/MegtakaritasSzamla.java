@@ -20,8 +20,8 @@ public class MegtakaritasSzamla extends Szamla{
     @Override
     public boolean kivesz(int osszeg) {
 
-        if (super.aktualisEgyenleg-osszeg>=0){
-            aktualisEgyenleg-=osszeg;
+        if (super.getAktualisEgyenleg()-osszeg>=0){
+            this.aktualisEgyenleg-=osszeg;
             return true;
         }else{
             return false;
@@ -30,6 +30,6 @@ public class MegtakaritasSzamla extends Szamla{
     }
 
     public void kamatJovairas(){
-       super.aktualisEgyenleg =(int) (super.aktualisEgyenleg*(this.kamat/100));
+       super.aktualisEgyenleg =(int) (super.aktualisEgyenleg*(1+(this.kamat/100)));
     }
 }

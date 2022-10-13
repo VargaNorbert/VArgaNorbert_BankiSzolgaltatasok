@@ -15,7 +15,7 @@ public class HitelSzamla extends Szamla {
     @Override
     public boolean kivesz(int osszeg) {
 
-        if (super.aktualisEgyenleg-osszeg>=super.aktualisEgyenleg-this.hitelKeret){
+        if (super.getAktualisEgyenleg()-osszeg>=0-this.hitelKeret){
             super.aktualisEgyenleg-=osszeg;
             return true;
         }else{
