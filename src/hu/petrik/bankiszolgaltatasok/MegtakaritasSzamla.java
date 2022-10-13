@@ -2,7 +2,7 @@ package hu.petrik.bankiszolgaltatasok;
 
 public class MegtakaritasSzamla extends Szamla{
     private double kamat;
-    public static double alapKamat;
+    public static double alapKamat= 10;
 
     public MegtakaritasSzamla(Tulajdonos tulajdonos) {
         super(tulajdonos);
