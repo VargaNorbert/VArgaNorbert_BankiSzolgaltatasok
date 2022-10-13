@@ -18,7 +18,6 @@ public class Main {
         szamla.kamatJovairas();
 
         System.out.println(OTP.getOsszegyenleg(t1));
-        OTP.getLegnagyobbEgyenleguSzamla(t2);
 
 
     }
