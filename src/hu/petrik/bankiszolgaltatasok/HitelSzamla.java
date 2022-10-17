@@ -1,11 +1,18 @@
 package hu.petrik.bankiszolgaltatasok;
 
+import java.util.InputMismatchException;
+
 public class HitelSzamla extends Szamla {
     private int hitelKeret;
 
     public HitelSzamla(Tulajdonos tulajdonos, int hitelKeret) {
         super(tulajdonos);
-        this.hitelKeret = hitelKeret;
+        if (hitelKeret<0){
+            throw new InputMismatchException("A hitelkeret nem lehet negatív!");
+        }else{
+            this.hitelKeret = hitelKeret;
+        }
+
     }
 
     public int getHitelKeret() {
