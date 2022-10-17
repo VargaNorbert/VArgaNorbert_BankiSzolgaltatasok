@@ -6,7 +6,7 @@ public class Main {
         Tulajdonos t1 = new Tulajdonos("Teszt Elek");
         Tulajdonos t2 = new Tulajdonos("Gipsz Jakab");
 
-        MegtakaritasSzamla szamla =(MegtakaritasSzamla)  OTP.szamlaNyitas(t2,0);
+        MegtakaritasiSzamla szamla =(MegtakaritasiSzamla)  OTP.szamlaNyitas(t2,0);
         HitelSzamla szamla2 = (HitelSzamla) OTP.szamlaNyitas(t1,150000);
 
         szamla.befizet(10000);

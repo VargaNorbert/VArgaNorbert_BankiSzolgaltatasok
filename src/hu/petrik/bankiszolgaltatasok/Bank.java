@@ -13,7 +13,7 @@ public class Bank {
     public Szamla szamlaNyitas(Tulajdonos tulajdonos,int hitelKeret){
 
         if (hitelKeret==0){
-            MegtakaritasSzamla szamla = new MegtakaritasSzamla(tulajdonos);
+            MegtakaritasiSzamla szamla = new MegtakaritasiSzamla(tulajdonos);
             szamlaLista.add(szamla);
             return szamla;
         }else{
