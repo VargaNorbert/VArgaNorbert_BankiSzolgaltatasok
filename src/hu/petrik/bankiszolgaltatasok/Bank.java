@@ -48,7 +48,7 @@ public class Bank {
         return szamlaLista.get(index);
     }
 
-    public long getosszHitelkeret(){
+    public long getOsszHitelkeret(){
         long ossz=0;
         for(Szamla sz : szamlaLista){
             if (sz instanceof HitelSzamla){
